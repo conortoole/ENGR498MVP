@@ -2,38 +2,37 @@
 
 // Structure to hold Bluetooth data
 struct bt_data ad[] = {
-	BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR),    //0
-	BT_DATA_BYTES(BT_DATA_UUID16_ALL, 0xaa, 0xfe),      //1
-	BT_DATA_BYTES(BT_DATA_SVC_DATA16,  //0              //2
-		      0xaa,					   //1
-			  0xfe,                    //2
-		      0x10,                    //3
-		      0x00,                    //4
-		      'S',                     //5
-		      't',                     //6
-			  'a',                     //7
-			  'r',                     //8
-			  't',                     //9
-			  'i',                     //10
-			  'n',                     //11
-			  'g',                     //12
-			  '-',                     //13
-			  'R',                     //14
-			  'e',                     //15
-			  'm',                     //16
-			  'o',                     //17
-			  't',                     //18
+	BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR),    //0, 1
+	BT_DATA_BYTES(BT_DATA_UUID16_ALL, 0xaa, 0xfe),      //2, 3, 4
+	BT_DATA_BYTES(BT_DATA_SVC_DATA16,              		//5
+		      0xfe,                    //6
+		      0x10,                    //7
+		      0x00,                    //8
+		      'S',                     //9
+		      't',                     //10
+			  'a',                     //11
+			  'r',                     //12
+			  't',                     //13
+			  'i',                     //14
+			  'n',                     //15
+			  'g',                     //16
+			  '-',                     //17
+			  'R',                     //18
 			  'e',                     //19
-			  '-',                     //20
-			  'I',                     //21
-			  'D',                     //22
-			  '-',                     //23
-			  'B',                     //24
-			  'e',                     //25
-			  'a',                     //26
-			  'c',                     //27
-			  'o',                     //28
-			  'n'	                   //29
+			  'm',                     //20
+			  'o',                     //21
+			  't',                     //22
+			  'e',                     //23
+			  '-',                     //24
+			  'I',                     //25
+			  'D',                     //26
+			  '-',                     //27
+			  'B',                     //28
+			  'e',                     //29
+			  'a',                     //30
+			  'c',                     //31
+			  'o',                     //32
+			  'n'	                   //33
               )
 };
 
